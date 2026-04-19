@@ -4,7 +4,7 @@ This reference captures the target acceptance-criteria structure used for story 
 
 Use it as the formatting source of truth when creating or rewriting story sizing tabs.
 
-This layout is AC-only, but the content must still be flow-complete.
+This layout must visually match the `Example` sheet, but only the acceptance-criteria table is actively populated. The rest of the template remains empty.
 
 ## High-level shape
 
@@ -16,6 +16,7 @@ This layout is AC-only, but the content must still be flow-complete.
 - Rows 6 onward contain numbered acceptance criteria slices.
 - Positive flow rows should appear first.
 - Negative flow, validation flow, and failure flow rows should appear after the happy path.
+- The non-AC sections to the right and below the AC table keep the same shape as `Example`, but their contents must stay empty.
 
 ## Header structure
 
@@ -30,15 +31,30 @@ Subheaders used beneath the acceptance-criteria area:
 - `When`
 - `Then`
 
+Active columns:
+
+- `No`
+- `Given`
+- `When`
+- `Then`
+
+`Acceptance Criteria:` is a merged group header above `Given`, `When`, and `Then`. It is not a separate content column.
+
 ## Content expectations by row
 
 Each numbered row should usually contain:
 
 - `No`: sequential numbering starting from `1`
-- `Acceptance Criteria`: actor or state context
 - `Given`: optional precondition if needed
 - `When`: user/system action
 - `Then`: observable system result
+
+Do not create or populate:
+
+- an `Acceptance Criteria` content column
+- a second `When` column
+- a second `Then` column
+- any additional AC subheaders beyond `Given`, `When`, and `Then`
 
 ## Flow depth rules
 
@@ -54,6 +70,8 @@ Each numbered row should usually contain:
 
 - Follow the ordering closely.
 - Keep blank spacer rows when they help preserve readability.
-- Do not add technical or estimation columns.
+- Match the overall sheet structure of `Example`, including merges, borders, and visual grouping.
+- Do not fill technical or estimation sections such as `New Technology`, `Surrounding`, `Technical Flow`, `UI Slicing`, `Task`, `Mandays`, `Total`, or `Size`.
 - Do not collapse the sheet into a one-row summary CSV structure.
 - Prefer exact labels above unless the user asks to rename them.
+- Ensure the last acceptance-criteria row keeps the same borders as the rest of the AC table and does not visually break from the table.
