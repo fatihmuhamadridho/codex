@@ -1,0 +1,7 @@
+interface:
+  display_name: "Figma Repo Compliance"
+  short_description: "Turn Figma into repo-safe code changes."
+  default_prompt: "Use $figma-repo-compliance to implement this Figma design without violating the repo's existing components or structure."
+
+policy:
+  allow_implicit_invocation: true

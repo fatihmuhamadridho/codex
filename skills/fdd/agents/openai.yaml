@@ -1,0 +1,7 @@
+interface:
+  display_name: "Feature-Driven Development"
+  short_description: "Place code into the right feature slice safely."
+  default_prompt: "Use $fdd to decide where this code belongs and enforce feature boundaries in this repo."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Commit Push"
+  short_description: "Commit staged Git changes and push safely."
+  default_prompt: "Use $commit-push to commit the staged changes with an allowed type and push the current branch."
+
+policy:
+  allow_implicit_invocation: true

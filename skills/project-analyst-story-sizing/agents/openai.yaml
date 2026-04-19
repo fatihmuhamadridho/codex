@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story Sizing"
+  short_description: "Turn product requirements into Example-style story sizing sheets"
+  default_prompt: "Use project_analyst to analyze this feature, then write the result into a Google Sheet tab using the Example story sizing layout."

@@ -1,0 +1,97 @@
+---
+name: commit-push
+description: Guide for committing staged Git changes and pushing the current branch with a constrained Conventional Commit prefix. Use when Codex should prepare a commit message, create a commit, and push the active branch while limiting allowed commit types to feat, fix, hotfix, test, and refactor.
+---
+
+# Commit Push
+
+Use this skill when the user wants Codex to commit local changes and push the current branch.
+
+This skill only covers commit and push. It does not stage files automatically and it does not open a PR or MR.
+
+## Workflow
+
+1. Confirm the current directory is inside a Git repository.
+2. Inspect the active branch and working tree.
+3. Verify there are staged changes.
+4. Review only the staged diff to infer the commit intent.
+5. Write a commit message in the required format.
+6. Create the commit.
+7. Push the active branch to its remote.
+8. If the branch has no upstream, push with upstream tracking.
+
+Stop and tell the user if there are no staged changes. Do not run `git add`, `git add -u`, or `git add -A` as part of this skill unless the user explicitly asks for staging help in a separate instruction.
+
+## Commit Format
+
+The commit message format is:
+
+```text
+type: summary
+```
+
+Rules:
+- `type` must be lowercase.
+- Allowed types are only `feat`, `fix`, `hotfix`, `test`, `refactor`.
+- Use exactly one colon followed by one space.
+- Do not add scope, such as `feat(api): ...`.
+- Keep `summary` short, specific, and imperative.
+- Do not end the summary with a period.
+
+## Allowed Types
+
+Use these meanings:
+
+- `feat`: adds user-facing or developer-facing functionality
+- `fix`: fixes a non-urgent bug or regression
+- `hotfix`: fixes a production issue or urgent breakage
+- `test`: adds or updates tests without changing product behavior
+- `refactor`: restructures code without intended behavior changes
+
+If the requested change does not fit one of these categories, say so and ask the user whether they want the closest allowed type used.
+
+## Examples
+
+Valid examples:
+
+```text
+feat: add workspace switcher to header
+fix: handle empty response in sync job
+hotfix: prevent checkout crash on null cart
+test: cover token refresh retry flow
+refactor: split billing service validation logic
+```
+
+Invalid examples:
+
+```text
+feat(ui): add workspace switcher
+docs: update readme
+fix add retry for sync job
+Refactor: clean service layer
+```
+
+## Push Rules
+
+- Push the active branch only.
+- Prefer the existing upstream when it is configured.
+- If no upstream exists, use a push command that sets upstream for the current branch.
+- Do not force-push unless the user explicitly asks for it.
+
+## Safety Checks
+
+Before committing, verify:
+- Git repository is available
+- Active branch is not detached
+- There are staged changes
+- The staged diff is coherent enough to summarize in one commit
+
+If the staged changes appear too broad for one commit, warn the user before committing.
+
+## Trigger Examples
+
+Use this skill for prompts like:
+- "Use $commit-push to commit and push these staged changes."
+- "Bantu commit dan push branch ini dengan type fix."
+- "Buat commit message yang valid lalu push."
+- "Commit perubahan staged ini pakai type refactor."

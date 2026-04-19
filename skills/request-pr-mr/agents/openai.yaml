@@ -1,0 +1,7 @@
+interface:
+  display_name: "Request PR MR"
+  short_description: "Create a diff-based pull or merge request."
+  default_prompt: "Use $request-pr-mr to ask for the target branch, inspect the real diff, and create the correct PR or MR with accurate request text."
+
+policy:
+  allow_implicit_invocation: true

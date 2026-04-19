@@ -1,0 +1,16 @@
+# Ignore everything by default.
+/*
+
+# Keep the ignore policy itself versioned.
+!/.gitignore
+
+# Allow the only paths that should be pushed.
+!/AGENTS.md
+!/agents/
+!/agents/**
+!/skills/
+!/skills/**
+
+# Do not push bundled system skills.
+/skills/.system/
+/skills/.system/**
