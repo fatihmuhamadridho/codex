@@ -15,7 +15,7 @@ This skill only covers commit and push. It does not stage files automatically an
 2. Inspect the active branch and working tree.
 3. Verify there are staged changes.
 4. Review only the staged diff to infer the commit intent.
-5. Write a commit message in the required format.
+5. Write a commit message in the required subject-and-body format.
 6. Create the commit.
 7. Push the active branch to its remote.
 8. If the branch has no upstream, push with upstream tracking.
@@ -24,10 +24,23 @@ Stop and tell the user if there are no staged changes. Do not run `git add`, `gi
 
 ## Commit Format
 
-The commit message format is:
+Every commit created with this skill must include:
+
+1. A subject line
+2. A description body after one blank line
+
+The subject format is:
 
 ```text
 type: summary
+```
+
+The full commit shape is:
+
+```text
+type: summary
+
+description paragraph
 ```
 
 Rules:
@@ -37,6 +50,11 @@ Rules:
 - Do not add scope, such as `feat(api): ...`.
 - Keep `summary` short, specific, and imperative.
 - Do not end the summary with a period.
+- Always add a description body.
+- The description should be a short paragraph, not bullets.
+- Keep the description grounded in the staged diff and explain what changed and why it matters.
+- Do not repeat the subject verbatim in the description.
+- Do not leave the description blank even for small commits.
 
 ## Allowed Types
 
@@ -56,10 +74,24 @@ Valid examples:
 
 ```text
 feat: add workspace switcher to header
+
+Adds the header workspace selector and updates the switch flow so users can change active workspaces without leaving the current page.
+
 fix: handle empty response in sync job
+
+Guards the sync parser against empty upstream payloads so the job fails safely instead of raising an unhandled exception.
+
 hotfix: prevent checkout crash on null cart
+
+Adds a null check before checkout initialization to stop the production crash path when cart state is missing.
+
 test: cover token refresh retry flow
+
+Adds regression coverage for the retry path after token refresh so auth failures are caught before release.
+
 refactor: split billing service validation logic
+
+Separates billing validation from request orchestration so the rules are easier to reuse and maintain.
 ```
 
 Invalid examples:
@@ -69,7 +101,10 @@ feat(ui): add workspace switcher
 docs: update readme
 fix add retry for sync job
 Refactor: clean service layer
+fix: handle empty response
 ```
+
+That last example is invalid because it has no description body.
 
 ## Push Rules
 
@@ -85,6 +120,7 @@ Before committing, verify:
 - Active branch is not detached
 - There are staged changes
 - The staged diff is coherent enough to summarize in one commit
+- The staged diff is coherent enough to justify one subject and one description body
 
 If the staged changes appear too broad for one commit, warn the user before committing.
 

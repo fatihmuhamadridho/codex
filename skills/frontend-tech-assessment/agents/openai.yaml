@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend Tech Assessment"
+  short_description: "Break down frontend tasks into assessment sheets."
+  default_prompt: "Use $frontend-tech-assessment to break this BRD, analyst output, or Figma flow into grouped frontend tasks and write the result into an assessment sheet."
