@@ -56,20 +56,30 @@ Read [references/source-priority.md](references/source-priority.md) when sources
 5. Split UI work from API integration work whenever both are present.
 6. Add task notes only when they materially help, such as BR references, API dependency notes, role constraints, or missing-contract warnings.
 7. Fill `Mandays` with coarse frontend estimates. Leave `Actual Mandays` empty unless the user provides actuals.
-8. Write the result into the requested Google Sheet tab by following [references/output-shape.md](references/output-shape.md).
-9. Re-read the written range and confirm the grouping, story labels, task ordering, and estimates are present.
+8. Before writing, inspect the target tab and at least one nearby reference tab so the output mirrors the live sheet layout instead of assuming a generic template.
+9. Write the result into the requested Google Sheet tab by following [references/output-shape.md](references/output-shape.md).
+10. Re-read the written range and confirm the grouping, story labels, task ordering, merges, and estimates are present.
 
 ## Output rules
 
 - The default output target is a Google Sheet tab.
 - If no spreadsheet target is provided, produce a Markdown table or list that mirrors the same grouped structure.
-- The primary output columns are:
+- The output must follow the live target sheet shape, not a fallback template from another workbook.
+- When the target resembles the Patricia FE tracker, use the active columns:
+  - `Story Ticket`
+  - `Ticket`
   - `Task`
-  - `Actual Mandays`
+  - `Hard Mandays`
   - `Mandays`
+  - `Actual Mandays`
   - `Story`
+  - `Priority`
+  - `Start Date`
+  - `End Date`
+  - `Internal Testing`
+  - `PIC`
   - `Notes`
-- Use grouped sections with a review marker row before each module.
+- Use grouped story sections that mirror the existing tab formatting, including one blank white spacer row between story blocks, then a separator row when the reference tab uses it, and merged story-level cells when present in the reference tab.
 - Use FE-first task names such as:
   - `[FE] Slicing Location Page`
   - `[FE] Integrasi API Get List Location`
@@ -93,8 +103,10 @@ Use [references/input-types.md](references/input-types.md) to decide how to read
 Before stopping:
 
 - confirm every module has a visible story or group label
+- confirm the written block mirrors the target sheet's grouping and merged-cell pattern
 - confirm each task is frontend-specific
 - confirm UI slicing and API integration are split when both exist
+- confirm both `Hard Mandays` and `Mandays` are populated when the target tab uses both
 - confirm `Mandays` is populated with coarse estimates
 - confirm `Actual Mandays` is blank unless actuals were provided
 - confirm notes only contain helpful references or dependencies

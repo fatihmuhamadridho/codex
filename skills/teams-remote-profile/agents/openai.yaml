@@ -1,0 +1,7 @@
+interface:
+  display_name: "Teams Remote Profile"
+  short_description: "Launch a Chrome profile clone with remote debugging and drive Teams PWA chat flows."
+  default_prompt: "Use $teams-remote-profile to launch a Chrome profile clone with remote debugging, attach to Teams PWA, search for a person or chat, and inspect or send a Teams message with delivery verification."
+
+policy:
+  allow_implicit_invocation: true
