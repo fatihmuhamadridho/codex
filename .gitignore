@@ -11,6 +11,8 @@
 !/agents/**
 !/skills/
 !/skills/**
+/skills/**/__pycache__/
+/skills/**/__pycache__/**
 
 # Do not push bundled system skills.
 /skills/.system/
