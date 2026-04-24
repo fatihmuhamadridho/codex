@@ -1,0 +1,1 @@
+- Di skill jira-qa-testcase masih kurang karna saat dikasih banyak link story dia malah generate banyak file xlsx, padahal yang penting dia bikin 1 file nya aja

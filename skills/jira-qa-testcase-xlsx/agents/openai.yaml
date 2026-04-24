@@ -1,0 +1,4 @@
+interface:
+  display_name: "Jira QA Test Case XLSX"
+  short_description: "Generate Jira test-case XLSX files"
+  default_prompt: "Use $jira-qa-testcase-xlsx to analyze this Jira story and generate a new XLSX test-case workbook in Downloads."
