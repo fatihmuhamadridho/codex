@@ -7,70 +7,65 @@ Do not assume a generic assessment template if the spreadsheet already has an es
 - the target tab
 - at least one nearby finished tab used by the same team
 
-## Patricia FE Tracker Shape
+## Simplified Patricia Template
 
-When the target sheet matches the Patricia FE tracker pattern, write the output in these active columns:
+When the target sheet matches the simplified Patricia template, write the output in these columns only:
 
-- `Story Ticket`
-- `Ticket`
 - `Task`
-- `Hard Mandays`
 - `Mandays`
-- `Actual Mandays`
 - `Story`
-- `Priority`
-- `Start Date`
-- `End Date`
-- `Internal Testing`
-- `PIC`
 - `Notes`
 
-Other columns may exist to the right. Leave them untouched unless the user explicitly asks to fill them.
+Other columns may exist in other tabs. Ignore them unless the user explicitly asks to fill them.
 
-## Group Structure
+## Row Structure
 
-For each story or flow group:
+Write the assessment as a simple downward list:
 
-1. Leave one blank white spacer row after a story block when the reference tab shows visible breathing room between groups.
-2. Add a green separator row after that spacer when the reference tab uses one.
-3. Write one FE task per row under the next story block.
-4. Merge story-level cells only when the reference tab does so.
+1. One FE task per row.
+2. Put the coarse estimate in `Mandays`.
+3. Fill `Story` on every row, even when several consecutive rows belong to the same story.
+4. Fill `Notes` only when there is useful additional context.
 
-For Patricia-like tabs, this usually means:
-
-- merge `Story Ticket` vertically across the story block when the whole block belongs to one story ticket
-- keep `Ticket` row-level when each FE task has its own ticket
-- merge `Story` vertically across the task rows in the same group
-- merge `Internal Testing` vertically across the task rows in the same group
-- keep `Priority`, `Start Date`, `End Date`, `PIC`, and `Notes` row-level unless the reference tab clearly merges them
+Do not use merged cells for grouping in this simplified template.
+Do not write plain values into unformatted rows and assume the sheet will look correct. Reuse the existing formatted task row style from the target tab.
 
 ## Writing Rules
 
-- Mirror the nearby finished tab's visual grouping before inventing a new layout.
-- In Patricia-like tabs, do not let one story block visually touch the next one.
-- The expected transition is: last task row -> one blank white row -> one green separator row -> next story block.
-- Prefer one story block per actual FE flow, not one oversized dump block for unrelated screens.
-- Keep `Actual Mandays` empty unless the user provides actuals.
-- If `Story Ticket` or `Ticket` mappings are unknown, leave them blank rather than inserting misleading placeholders.
-- If the reference tab uses green status cells such as `Done`, copy that convention only when it fits the user's requested output.
+- Mirror the target tab structure before borrowing patterns from nearby tabs.
+- Before writing a block, inspect one valid task row from the target tab and treat it as the formatting source of truth.
+- If you need to extend the block downward, copy the template row format first or write in a way that preserves the same borders, alignment, wrap, and fonts on each new row.
+- If the user gives a finished tab such as `Drop 5.1`, use it only as a content example for task granularity and estimation style.
+- From finished tabs, only carry forward the relevant content:
+  - FE task wording
+  - coarse mandays
+  - story name
+- Do not copy planning metadata such as ticket ids, priority, dates, internal testing, or PIC into the simplified template.
+- Keep notes short and practical, for example:
+  - dependency on API contract
+  - assumption about role access
+  - reason a task is split
+  - rule or constraint from the requirement
 
 ## Example
 
-Patricia-style output should look like this structurally:
+Simplified Patricia-style output should look like this structurally:
 
-| Story Ticket | Ticket | Task | Hard Mandays | Mandays | Actual Mandays | Story | Priority | Start Date | End Date | Internal Testing | PIC | Notes |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  |  |  |  |  |  |  |  |  |  |  |  |  |
-| SPPAT-XXXX |  | [FE] Slicing Login Page - 0.5 | 0.5 | 0.5 |  | Login + OTP | 1 | ... | ... | ... | ... | ... |
-|  |  | [FE] Integrasi Submit Login - 0.5 | 0.5 | 0.5 |  |  | 2 | ... | ... |  | ... | ... |
-|  |  | [FE] Slicing OTP Verification Page - 0.5 | 0.5 | 0.5 |  |  | 3 | ... | ... |  | ... | ... |
+| Task | Mandays | Story | Notes |
+| --- | --- | --- | --- |
+| [FE] Slicing Onboarding landing page | 0.5 | Onboarding | Includes empty state and CTA state |
+| [FE] Integrasi API submit onboarding form | 1 | Onboarding | Wait for final payload contract |
+| [FE] Slicing modal confirm onboarding action | 0.25 | Onboarding |  |
+| [FE] Slicing user preference page | 0.5 | Preferences | Role visibility follows BRD section 4 |
 
 ## Validation
 
 Before stopping, confirm:
 
 - the sheet no longer contains placeholder story labels from the template
-- task rows sit under the correct story group
-- merged cells match the reference pattern
-- `Hard Mandays` and `Mandays` are both filled when both columns exist
+- every task row has a populated `Story` value
+- repeated story labels are written explicitly instead of implied by merges
+- `Mandays` is populated on each task row
+- `Notes` is only used for real context, not filler
+- each written row keeps the same border and formatting treatment as the target template
 - the written block reads cleanly in the actual sheet UI, not only in raw cell output

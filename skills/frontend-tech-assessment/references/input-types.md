@@ -17,6 +17,7 @@ Reading strategy:
 - identify module names first
 - extract rows that imply UI surfaces, actions, validation, or role-based behavior
 - convert acceptance-criteria wording into FE implementation tasks
+- when the source tab is a finished assessment example, only extract the content pattern from `Task`, `Mandays`, and `Story`
 - do not keep the source in acceptance-criteria format
 
 ## Project Analyst outputs
@@ -66,7 +67,7 @@ Use them mainly to:
 
 - confirm module boundaries
 - derive implied FE forms and settings areas
-- capture notes such as BR identifiers
+- capture notes such as BR identifiers, constraints, or estimation reasons
 
 ## Figma and image flows
 
