@@ -16,10 +16,10 @@ This skill is a gatekeeper and orchestrator. It does not replace Figma MCP skill
 3. Decide whether the design is a new feature or a change to an existing one.
 4. Inspect the repository for existing components, patterns, and feature ownership before building.
 5. Reuse existing repo components first.
-6. Use `$fdd` to decide feature placement and page ownership.
+6. Use `$feature-driven-development` to decide feature placement and page ownership.
 7. Use `$atomic-design` to decide component extraction and UI boundaries.
 8. Use `$clean-architecture` if the work touches data flow, hooks, or use-case placement.
-9. Use `$tdd` only when the user explicitly asks for testing work.
+9. Use `$test-driven-development` only when the user explicitly asks for testing work.
 10. Validate the implementation against both Figma fidelity and repo compliance before finishing.
 
 Read [references/workflow.md](references/workflow.md) for the step-by-step decision flow.
@@ -64,7 +64,7 @@ Use this skill to avoid failures like:
 
 Use this skill before or alongside:
 - `figma:figma-implement-design` for extracting design context from Figma
-- `$fdd` for feature ownership and route boundaries
+- `$feature-driven-development` for feature ownership and route boundaries
 - `$atomic-design` for component composition decisions
 - `$clean-architecture` for dependency and layering decisions
 

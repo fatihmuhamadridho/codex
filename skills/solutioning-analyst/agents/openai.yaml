@@ -1,0 +1,4 @@
+interface:
+  display_name: "Solutioning Analyst"
+  short_description: "Turn Figma screens into backend docs"
+  default_prompt: "Use $solutioning-analyst to infer the primary feature from this Figma link or screenshot and write a Markdown plus Mermaid solutioning document in the user's preferred language with Objective Overview through Table Status Code."

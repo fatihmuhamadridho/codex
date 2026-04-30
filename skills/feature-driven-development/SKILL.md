@@ -1,5 +1,5 @@
 ---
-name: fdd
+name: feature-driven-development
 description: Practical guidance for Feature-Driven Development in Next.js-style repositories. Use when Codex needs to place code into the correct feature slice, enforce feature isolation, keep pages routing-only, decide whether code belongs in features, commons, or commons-ui, or determine SSR/ISR ownership.
 ---
 
@@ -49,7 +49,7 @@ If the main problem is component layering, also use `$atomic-design`.
 
 If the main problem is dependency direction or use-case placement, also use `$clean-architecture`.
 
-If the task becomes test-first design or test placement, switch to `$tdd`.
+If the task becomes test-first design or test placement, switch to `$test-driven-development`.
 
 ## Review Checklist
 
@@ -63,7 +63,7 @@ Before finishing, verify:
 ## Trigger Examples
 
 Use this skill for prompts like:
-- "Use $fdd to decide whether this code belongs in feature or commons."
+- "Use $feature-driven-development to decide whether this code belongs in feature or commons."
 - "Review boundary halaman ini, terlalu banyak logic di page atau tidak."
 - "Bantu refactor biar sesuai Feature-Driven Development."
 - "Logic SSR ini harus tinggal di page atau di feature?"

@@ -6,6 +6,7 @@
 
 # Allow the only paths that should be pushed.
 !/AGENTS.md
+!/README.md
 !/MILESTONE.md
 !/agents/
 !/agents/**

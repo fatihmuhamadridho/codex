@@ -51,7 +51,7 @@ Do not default to composing the full screen from raw HTML if the repo already pr
 ## 5. Enforce Correct Boundaries
 
 Use the local skills for the decisions they own:
-- `$fdd`: feature ownership, page boundaries, shared placement
+- `$feature-driven-development`: feature ownership, page boundaries, shared placement
 - `$atomic-design`: atom/molecule/organism/template/page splits
 - `$clean-architecture`: hooks, use cases, repositories, dependency direction
 

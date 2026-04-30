@@ -1,5 +1,5 @@
 ---
-name: tdd
+name: test-driven-development
 description: Practical guidance for pragmatic Test-Driven Development across languages and frameworks. Use when Codex needs to design or implement changes test-first, choose the right test level, place tests correctly, identify seams for isolation, refactor safely under coverage, or adopt TDD incrementally in legacy code.
 ---
 
@@ -50,7 +50,7 @@ Use this skill for questions like:
 - How do I create a seam around this dependency?
 - How do I apply TDD in a messy or legacy area?
 
-If the main problem becomes feature ownership or page boundaries, also use `$fdd`.
+If the main problem becomes feature ownership or page boundaries, also use `$feature-driven-development`.
 
 If the main problem becomes dependency direction or layer placement, also use `$clean-architecture`.
 
@@ -70,7 +70,7 @@ Before finishing, verify:
 ## Trigger Examples
 
 Use this skill for prompts like:
-- "Use $tdd to drive this bug fix from a failing test."
+- "Use $test-driven-development to drive this bug fix from a failing test."
 - "Help me choose the first test to write before implementing this feature."
 - "Apply pragmatic TDD in this legacy module."
 - "Bantu kerjakan ini pakai TDD."

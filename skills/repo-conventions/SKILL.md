@@ -7,7 +7,7 @@ description: Repo-wide coding conventions and completion checks for work that mu
 
 Use this skill when the task needs repo-wide rules, coding conventions, or completion checks that are not owned by a more specific skill.
 
-This skill is the general rulebook. It does not replace `$fdd`, `$atomic-design`, `$clean-architecture`, or `$commit-push`. It complements them.
+This skill is the general rulebook. It does not replace `$feature-driven-development`, `$atomic-design`, `$clean-architecture`, or `$commit-push`. It complements them.
 
 Read [references/repo-rules.md](references/repo-rules.md) for the repo-wide implementation rules.
 
@@ -42,12 +42,12 @@ Use this skill for questions like:
 - Is the change too broad for the requested scope?
 
 Do not use this skill as a substitute for:
-- `$fdd` when the main issue is feature ownership or page boundaries
+- `$feature-driven-development` when the main issue is feature ownership or page boundaries
 - `$atomic-design` when the main issue is UI composition boundaries
 - `$clean-architecture` when the main issue is dependency direction or layer placement
 - `$commit-push` when the main issue is Git workflow
 
-This skill does not define testing workflow. If testing becomes the core concern, switch to `$tdd`.
+This skill does not define testing workflow. If testing becomes the core concern, switch to `$test-driven-development`.
 
 ## Review Checklist
 

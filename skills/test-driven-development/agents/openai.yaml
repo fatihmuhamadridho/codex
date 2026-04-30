@@ -1,4 +1,4 @@
 interface:
   display_name: "Test-Driven Development"
   short_description: "Plan and implement changes with pragmatic TDD."
-  default_prompt: "Use $tdd to drive this change with a pragmatic red-green-refactor workflow."
+  default_prompt: "Use $test-driven-development to drive this change with a pragmatic red-green-refactor workflow."

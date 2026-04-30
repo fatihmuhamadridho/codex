@@ -1,4 +1,10 @@
-@/home/fatihmuhamadridho/.codex/RTK.md
+@C:/Users/fatih/.codex/RTK.md
+
+## Tooling Preference
+
+- Prefer `pnpm` over `npm` for Node.js package management and CLI installs when a Node-based tool is needed.
+- Avoid `npm` unless there is no workable `pnpm` path for the task.
+- For Python package installs, use `python -m pip` instead of relying on a bare `pip` command.
 
 ## Custom Subagents
 
