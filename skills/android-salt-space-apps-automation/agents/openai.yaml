@@ -1,0 +1,4 @@
+interface:
+  display_name: "Android Salt Space Apps Automation"
+  short_description: "Automate Salt Space clock-in/out flows"
+  default_prompt: "Use $android-salt-space-apps-automation to automate Salt Space attendance flows on the connected Android device."
