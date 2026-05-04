@@ -1,6 +1,6 @@
 ---
 name: android-youtube-automation
-description: Use when automating the Android YouTube app itself, including launching YouTube, checking the foreground app, searching, opening results, controlling playback, navigating Home or Shorts or Library, inspecting YouTube UI selectors, handling common dialogs, and safely avoiding risky account-changing actions without confirmation. Do not use this skill for m.youtube.com or youtube.com browser automation.
+description: Use for automating the Android YouTube app, including search, playback control, dialogs, and playback-state verification.
 ---
 
 # Android YouTube Automation

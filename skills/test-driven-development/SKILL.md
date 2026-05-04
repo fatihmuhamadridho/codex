@@ -1,6 +1,6 @@
 ---
 name: test-driven-development
-description: Practical guidance for pragmatic Test-Driven Development across languages and frameworks. Use when Codex needs to design or implement changes test-first, choose the right test level, place tests correctly, identify seams for isolation, refactor safely under coverage, or adopt TDD incrementally in legacy code.
+description: Use for pragmatic Test-Driven Development, including test-first changes, minimal failing tests, and safe iteration.
 ---
 
 # Test-Driven Development

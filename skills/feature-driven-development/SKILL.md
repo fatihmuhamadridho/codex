@@ -1,6 +1,6 @@
 ---
 name: feature-driven-development
-description: Practical guidance for Feature-Driven Development in Next.js-style repositories. Use when Codex needs to place code into the correct feature slice, enforce feature isolation, keep pages routing-only, decide whether code belongs in features, commons, or commons-ui, or determine SSR/ISR ownership.
+description: Use for organizing or refactoring code with Feature-Driven Development, feature slices, and capability-based boundaries.
 ---
 
 # Feature-Driven Development

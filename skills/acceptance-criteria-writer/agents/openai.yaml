@@ -1,0 +1,4 @@
+interface:
+  display_name: "Acceptance Criteria Writer"
+  short_description: "Write business-facing acceptance criteria"
+  default_prompt: "Create or revise business-facing acceptance criteria from the provided BRD and solutioning artifacts."

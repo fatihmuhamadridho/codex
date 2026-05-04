@@ -1,6 +1,6 @@
 ---
 name: atomic-design
-description: Practical guidance for refactoring, reviewing, and organizing UI using Atomic Design. Use when Codex needs to split or restructure interfaces into atoms, molecules, organisms, templates, and pages; audit component boundaries; migrate an existing component library toward clearer composition; or prevent page-level concerns from leaking into reusable UI layers.
+description: Use for reviewing or refactoring UI with Atomic Design, including atoms, molecules, organisms, templates, and pages.
 ---
 
 # Atomic Design

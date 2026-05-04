@@ -1,6 +1,6 @@
 ---
 name: clean-architecture
-description: Practical guidance for reviewing, refactoring, and organizing codebases using clean architecture. Use when Codex needs to inspect dependency direction, classify modules into domain, application, interface/adapters, and infrastructure/presentation layers, find layering violations, isolate business rules from frameworks, or propose incremental refactors toward cleaner boundaries.
+description: Use for reviewing or refactoring codebases with clean architecture, layer boundaries, dependency direction, and business-rule isolation.
 ---
 
 # Clean Architecture

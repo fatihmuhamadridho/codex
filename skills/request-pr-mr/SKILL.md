@@ -1,6 +1,6 @@
 ---
 name: request-pr-mr
-description: Guide for creating a pull request or merge request from branch changes using a diff-based title and description. Use when Codex should ask for the target branch, inspect the actual source-vs-target diff, and then create the PR or MR with the appropriate provider flow.
+description: Use for preparing a pull request or merge request from branch changes with a diff-based title and summary.
 ---
 
 # Request PR or MR

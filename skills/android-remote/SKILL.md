@@ -1,6 +1,6 @@
 ---
 name: android-remote
-description: Use when controlling an Android phone remotely, inspecting Android UI, or automating app flows on a connected device. Use this when the task involves scrcpy live screen streaming, UIAutomator2, ADB taps/swipes/text/keyevents, device wake or unlock checks, UI tree dumps, package launch, text or resource-id lookup, element fallback handling, or safety checks before risky actions like payment, send, or delete.
+description: Use for Android remote control, UI inspection, and app automation on a connected device with ADB, UIAutomator2, or scrcpy.
 ---
 
 # Android Remote

@@ -1,6 +1,6 @@
 ---
 name: solutioning-analyst
-description: Analyze a Figma link, Figma screenshot, or UI image into a backend-oriented solutioning document in Markdown plus Mermaid. Use when Codex needs to infer the primary feature from a screen, identify business objective and system flow, define business rules, table design, state and sequence diagrams, API contracts, and status-code tables for a single feature.
+description: Use for turning a Figma link, screenshot, or UI image into backend-oriented solutioning, API flow, and technical scope.
 ---
 
 # Solutioning Analyst

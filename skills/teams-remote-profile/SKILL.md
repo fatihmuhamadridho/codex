@@ -1,6 +1,6 @@
 ---
 name: teams-remote-profile
-description: Launch or reuse a Chrome remote-debugging session backed by a cloned local Chrome profile, inspect CDP targets, and drive Microsoft Teams PWA workflows such as searching for a person or chat, opening the right conversation, closing search overlays, typing into the active composer, and sending a message with post-send verification.
+description: Use for launching or reusing a Chrome remote-debugging profile to inspect and automate Microsoft Teams PWA workflows.
 ---
 
 # Teams Remote Profile

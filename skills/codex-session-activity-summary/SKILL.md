@@ -1,6 +1,6 @@
 ---
 name: codex-session-activity-summary
-description: Summarize a user's work activity from Codex session logs in ~/.codex/sessions. Use when the user asks what they worked on today, yesterday, or on a specific date, wants a daily worklog, asks for a list of activities from Codex sessions, or wants a formal activity summary derived from session JSONL files.
+description: Use for summarizing a user's work from Codex session logs for today, yesterday, or a specific date.
 ---
 
 # Codex Session Activity Summary

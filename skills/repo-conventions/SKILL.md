@@ -1,6 +1,6 @@
 ---
 name: repo-conventions
-description: Repo-wide coding conventions and completion checks for work that must follow local repository patterns without relying on one architecture skill alone. Use when Codex should apply existing repo conventions, avoid broad anti-patterns, and verify that a change is actually done before stopping.
+description: Use for repo-wide coding conventions, structure alignment, naming consistency, and completion checks.
 ---
 
 # Repo Conventions

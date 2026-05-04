@@ -6,6 +6,22 @@
 - Avoid `npm` unless there is no workable `pnpm` path for the task.
 - For Python package installs, use `python -m pip` instead of relying on a bare `pip` command.
 
+## Skill Routing Priority
+
+- Keep `.codex/skills` as the primary skill source.
+- If a `.codex` skill and a `.agents` skill both match, prefer `.codex` when it is more specific to the user's environment, workflow, app, repo, or repeated habits.
+- If a `.agents` skill clearly matches the request and is not less specific than the available `.codex` option, use the `.agents` skill.
+- Do not skip a relevant `.agents` skill just because a `.codex` skill exists in the same broad area.
+- Prefer the most specific skill, not the most generic one.
+- When multiple skills are complementary, use both in the minimal order that helps execution.
+- For small or obvious tasks, do not force an extra generic `.agents` skill when it adds process overhead without improving execution.
+
+Practical defaults:
+
+- Prefer `.codex` for user-specific environment flows, local repo conventions, Android device automation, and workflows tailored to this machine or this user's habits.
+- Prefer `.agents` for generic methods such as debugging structure, frontend design process, test strategy, browser testing, or brainstorming, when no `.codex` skill is clearly more specific.
+- If still unsure, choose `.codex` first, then add the relevant `.agents` skill only if it provides clear execution value.
+
 ## Android Skill Routing
 
 - Treat any request to control, inspect, or automate the user's Android device as an explicit trigger for the `android-remote` skill.

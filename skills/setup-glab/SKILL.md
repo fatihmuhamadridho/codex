@@ -1,6 +1,6 @@
 ---
 name: setup-glab
-description: Guide for installing and authenticating GitLab CLI across Windows, macOS, and Ubuntu. Use when Codex should help a user set up `glab`, verify it is installed, confirm the GitLab host, run login, and confirm the CLI is ready to use.
+description: Use for installing, authenticating, and verifying GitLab CLI on Windows, macOS, or Ubuntu.
 ---
 
 # Setup GLab

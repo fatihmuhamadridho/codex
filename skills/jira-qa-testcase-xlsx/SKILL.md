@@ -1,6 +1,6 @@
 ---
 name: jira-qa-testcase-xlsx
-description: Generate QA test-case workbooks in XLSX format from a Jira story using an internal template. Use when Codex needs to analyze a Jira story URL, infer positive and negative test scenarios, and write a new test-case file into Downloads that matches the provided Excel example.
+description: Use for generating QA test-case XLSX workbooks from a Jira story with positive and negative scenarios.
 ---
 
 # Jira QA Testcase XLSX

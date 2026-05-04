@@ -1,6 +1,6 @@
 ---
 name: commit-push
-description: Guide for committing staged Git changes and pushing the current branch with a constrained Conventional Commit prefix. Use when Codex should prepare a commit message, create a commit, and push the active branch while limiting allowed commit types to feat, fix, hotfix, test, and refactor.
+description: Use for committing staged Git changes and pushing the current branch with safe checks and constrained commit types.
 ---
 
 # Commit Push

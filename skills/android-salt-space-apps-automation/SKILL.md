@@ -1,6 +1,6 @@
 ---
 name: android-salt-space-apps-automation
-description: Use when automating the Android Salt Space app (`salt.id.space.android`) for attendance flows such as clock in and clock out. Trigger this skill for requests about opening Space Apps on the user's Android device, verifying the clock-in or clock-out detail page, tapping the home `Clock In` or `Clock Out` buttons, optionally submitting the matching detail button, and verifying post-submit attendance UI without relying on activity changes alone.
+description: Use for automating the Android Salt Space app attendance flow, including clock in, clock out, dialog handling, and result verification.
 ---
 
 # Android Salt Space Apps Automation

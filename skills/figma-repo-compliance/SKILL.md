@@ -1,6 +1,6 @@
 ---
 name: figma-repo-compliance
-description: Compliance workflow for implementing code from Figma into an existing repository. Use when Codex must translate a Figma design into repo code while respecting existing components, choosing the correct feature or page target, avoiding unnecessary native HTML, and stopping for screenshots when the Figma context is unclear.
+description: Use for implementing Figma designs into an existing repo while preserving its structure, components, and conventions.
 ---
 
 # Figma Repo Compliance

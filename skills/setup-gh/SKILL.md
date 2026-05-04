@@ -1,6 +1,6 @@
 ---
 name: setup-gh
-description: Guide for installing and authenticating GitHub CLI across Windows, macOS, and Ubuntu. Use when Codex should help a user set up `gh`, verify it is installed, run GitHub login, and confirm the CLI is ready to use.
+description: Use for installing, authenticating, and verifying GitHub CLI on Windows, macOS, or Ubuntu.
 ---
 
 # Setup GH
