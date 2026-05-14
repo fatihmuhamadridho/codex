@@ -14,6 +14,7 @@ This repository packages reusable skills for AI agents to help with common proje
 
 ## Included Skills
 
+- `automation-patrol-builder` - helps create and repair patrol-style recurring automations with real per-cycle work, Telegram status updates, single-thread continuity, and clean stop rules.
 - `atomic-design` - helps structure UI systems using atomic design principles.
 - `clean-architecture` - helps organize code into clean architecture layers and boundaries.
 - `codex-session-activity-summary` - Codex-specific; summarizes work activity from local Codex session logs.

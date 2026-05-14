@@ -1,0 +1,10 @@
+version = 1
+id = "telegram-test-ping"
+kind = "heartbeat"
+name = "Thread test ping"
+prompt = "Every 2 minutes for 30 minutes, post one short generic test message into this thread. Do not send anything to Telegram."
+status = "PAUSED"
+rrule = "FREQ=MINUTELY;INTERVAL=2;COUNT=15"
+target_thread_id = "current"
+created_at = 1778333849882
+updated_at = 1778338783590

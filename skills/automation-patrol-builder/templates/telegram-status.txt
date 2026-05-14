@@ -1,0 +1,7 @@
+[Template status cycle]
+[NAMA_ITEM] - [completed/blocked]
+Sisa pekerjaan: [DAFTAR_SISA]
+
+[Template status final]
+Semua pekerjaan untuk [OBJECTIVE] sudah selesai.
+Tidak ada item required yang tersisa.

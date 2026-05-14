@@ -1,0 +1,10 @@
+version = 1
+id = "fe-breakdown-continuation"
+kind = "heartbeat"
+name = "FE breakdown continuation"
+prompt = "Using the frontend-tech-assessment workflow, append exactly one frontend feature breakdown per run to `Drop 5.3-fatih-2` in the Google Sheet. Start from the current bottom of the sheet and continue in the existing plan order from `FE-Breakdown-Plan.md`. For each run, write only the next single feature block using the 4-column Patricia format: `Task`, `Mandays`, `Story`, `Notes`. Preserve the existing formatting and continue one feature at a time only. Do not batch multiple features in one run. Stop only after every planned feature from `FE-Breakdown-Plan.md` has been written."
+status = "PAUSED"
+rrule = "RRULE:FREQ=MINUTELY;INTERVAL=3"
+target_thread_id = "019dd8dd-9cc0-7a62-b833-5ec2d3c3dc8c"
+created_at = 1777461316561
+updated_at = 1777463779476
